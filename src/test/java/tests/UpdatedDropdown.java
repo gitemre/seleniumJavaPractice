@@ -11,6 +11,11 @@ public class UpdatedDropdown {
 
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
+        driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
+        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+        driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
+        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+
         driver.findElement(By.id("divpaxinfo")).click();
         Thread.sleep(2000L);
         int i = 1;
